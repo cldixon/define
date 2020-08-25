@@ -4,7 +4,7 @@ from lib.definition import Definition
 
 @click.command()
 @click.argument('word')
-def lookup(word):
+def lookup(word: str):
     result = dictionary.lookup(word)
     if reader.matches_found(result):
         # matched word definitions returned

@@ -6,8 +6,12 @@ Look up words in the dictionary directly from your terminal.
 
 ## Example
 
-`define meaning`
-
+`>>> define meaning`
+`>>> meaning (noun)`
+`>>> `
+`>>> mean*ing | ˈmē-niŋ`
+`>>> `
+`>>> the thing one intends to convey especially by language : purport`
 
 ## TO DO
 - Improve formatting in print-out
