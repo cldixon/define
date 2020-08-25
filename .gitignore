@@ -1,0 +1,17 @@
+# jupyter notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# ds store
+.DS_Store
+
+# virtual environment
+env/ 
+
+# configs directory
+.configs/credentials.yml
+
+# python build
+build/
+define.egg-info/
+dist/
