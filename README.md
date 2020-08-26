@@ -1,22 +1,30 @@
-# Define: A CLI for Dictionaries
+# Define: A CLI Dictionary
 
 Look up words in the dictionary directly from your terminal.
 
 ## Installation
 
-## Example
+```
+git clone https://github.com/cldixon/define.git
+cd define
+python setup.py install
+```
 
-`>>> define meaning`
-`>>> meaning (noun)`
-`>>> `
-`>>> mean*ing | ˈmē-niŋ`
-`>>> `
-`>>> the thing one intends to convey especially by language : purport`
+## Example
+```
+> define meaning
+>
+> meaning (noun)
+>
+> pronunciation: mean*ing | ˈmē-niŋ
+>
+> definition: the thing one intends to convey especially by language : purport
+```
 
 ## TO DO
-- Improve formatting in print-out
-- Number options for different definitions (w/ option to specify and expand)
-- Argument filters to reduce return (e.g. --pos noun)
-- Cache api credentials
+- [IN-PROGRESS] Improve formatting in print-out
+- [WORKING] Number options for different definitions (w/ option to specify and expand)
+- [IN-PROGRESS] Argument filters to reduce return (e.g. --pos noun)
+- [IN-PROGRESS] Cache api credentials
 - Select from various dictionary APIs
-- Add colors to print-out
+- [DONE] Add colors to print-out

@@ -12,6 +12,7 @@ env/
 .configs/credentials.yml
 
 # python build
+__pycache__
 build/
 define.egg-info/
 dist/

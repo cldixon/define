@@ -14,9 +14,10 @@ setup(
         'Click',
         'pyyaml',
         'requests',
+        'colorama'
     ],
     entry_points='''
         [console_scripts]
-        define=main:lookup
+        define=main:get_definition
     ''',
 )
