@@ -1,2 +1,0 @@
-dictionary: 'merriam_webster'
-url_format: "https://www.dictionaryapi.com/api/v3/references/collegiate/json/{w}?key={k}"

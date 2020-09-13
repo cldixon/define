@@ -21,14 +21,14 @@ def get_current_dictionary() -> str:
     except:
         raise ValueError("No set dictionary in settings. Use the set argument.")
 
-def get_api_key(dictionary:str) -> str:
-    creds = load_credentials()
-    dict_creds = creds['dictionaries']
-    if dictionary in dict_creds:
-        try:
-            return dict_creds[dictionary]['api_key']
-        except:
-            raise ValueError("No api-key found in credentials for '{}' dictionary.".format(dictionary))
-    else:
-        raise ValueError("No credential information stored for '{}' dictionary.".format(dictionary))
+def get_api_key() -> str:
+    try:
+        key_info = open_yaml_file('.configs/.api_key.yml')
+    except:
+        raise ValueError(".api_key.yml file not found in '.configs'. Use the --set_key command to add your API Key.")
+    try:
+        return key_info['api_key']
+    except:
+        raise ValueError("API Key not found.")
+
 

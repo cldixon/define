@@ -10,6 +10,7 @@ env/
 
 # configs directory
 .configs/credentials.yml
+.configs/.api_key.yml
 
 # python build
 __pycache__

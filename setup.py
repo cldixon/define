@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="define",
-    version='0.11',
+    version='0.12',
     py_modules=[
         'main', 
         'lib.dictionary',
@@ -16,8 +16,9 @@ setup(
         'requests',
         'colorama'
     ],
-    entry_points='''
-        [console_scripts]
-        define=main:get_definition
-    ''',
+    entry_points={
+        'console_scripts': [
+            'define=main:get_definition'
+        ],
+    }
 )

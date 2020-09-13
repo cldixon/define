@@ -1,12 +1,11 @@
 import requests
 from lib import reader, configs
 
-# get current/set dictionary
-settings = configs.load_settings()
-_current = settings['dictionary']
-URL_FORMAT = settings['url_format']
+# get dictionary url format
+URL_FORMAT = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/{w}?key={k}"
+
 # get url format and api-key
-API_KEY = configs.get_api_key(settings['dictionary'])
+API_KEY = configs.get_api_key()
 
 
 def lookup(word:str):
@@ -20,7 +19,7 @@ def lookup(word:str):
     else:
         raise ValueError("API Request Failed.API Response had code [{}].".format(response.status_code))
 
-def filter(result:list, pos: str=None, hom_only: bool=True):
+def filter(result:list, pos: str=None, hom_only: bool=False):
     """"This function will filter dictionary lookup results
     according to parameters provided at command line."""
     filtered = result
